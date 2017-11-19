@@ -54,7 +54,7 @@ int vvod ( )
         else
         {
             system("cls");
-            printf( "Ââåäèòå ÷èñëî\n" );
+            printf( "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®\n" );
             while( !number.empty() )
             {
                 number.pop();
@@ -95,52 +95,52 @@ void vvod_mass( int &num, int &num2, int** &mass, bool &Flag )
 {
     system("cls");
 
-    delet( num, num2, mass ); // î÷èùàåì ïàìÿòü åñëè ìàññèâ óæå çàïîëíÿëñÿ
+    delet( num, num2, mass ); // Ã®Ã·Ã¨Ã¹Ã Ã¥Ã¬ Ã¯Ã Ã¬Ã¿Ã²Ã¼ Ã¥Ã±Ã«Ã¨ Ã¬Ã Ã±Ã±Ã¨Ã¢ Ã³Ã¦Ã¥ Ã§Ã Ã¯Ã®Ã«Ã­Ã¿Ã«Ã±Ã¿
 
     while(true)
     {
         system("cls");
 
-        printf("Ââåäèòå êîë-âî ñòğîê\n");
+        printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«-Ã¢Ã® Ã±Ã²Ã°Ã®Ãª\n");
 
         num = vvod ( );
 
-        if ( ( num > 0 ) && ( num < 1000 ) )
+        if /*(*/ ( num > 0 ) //&& ( num < 1000 ) )
         {
             break;
         }
         else
         {
-            printf("Ââåäèòå ïğàâèëüíîå çíà÷åíèå\n");
+            printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã°Ã Ã¢Ã¨Ã«Ã¼Ã­Ã®Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥\n");
         }
     }
     while(true)
     {
         system("cls");
 
-        printf("Ââåäèòå êîë-âî ñòîëáöîâ\n");
+        printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«-Ã¢Ã® Ã±Ã²Ã®Ã«Ã¡Ã¶Ã®Ã¢\n");
 
         num2 = vvod ( );
 
-        if ( ( num2 > 0 ) && ( num2 < 1000 ) )
+        if /*(*/ ( num2 > 0 ) //&& ( num2 < 1000 ) )
         {
             break;
         }
         else
         {
-            printf("Ââåäèòå ïğàâèëüíîå çíà÷åíèå\n");
+            printf("Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã°Ã Ã¢Ã¨Ã«Ã¼Ã­Ã®Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥\n");
         }
     }
 
-    sozdat ( num, num2, mass ); // âûäåëÿåì ïàìÿòü ïîä ìàññèâ
+    sozdat ( num, num2, mass ); // Ã¢Ã»Ã¤Ã¥Ã«Ã¿Ã¥Ã¬ Ã¯Ã Ã¬Ã¿Ã²Ã¼ Ã¯Ã®Ã¤ Ã¬Ã Ã±Ã±Ã¨Ã¢
 
     while( Flag == true )
     {
         system("cls");
 
-        printf( "êàê ââåñòè ıëåìåíòû?\n" );
-        printf( "íàæìèòå 1 åñëè âğó÷íóş\n" );
-        printf( "íàæìèòå 2 åñëè ñëó÷àéíûì îáğàçîì\n" );
+        printf( "ÃªÃ Ãª Ã¢Ã¢Ã¥Ã±Ã²Ã¨ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã»?\n" );
+        printf( "Ã­Ã Ã¦Ã¬Ã¨Ã²Ã¥ 1 Ã¥Ã±Ã«Ã¨ Ã¢Ã°Ã³Ã·Ã­Ã³Ã¾\n" );
+        printf( "Ã­Ã Ã¦Ã¬Ã¨Ã²Ã¥ 2 Ã¥Ã±Ã«Ã¨ Ã±Ã«Ã³Ã·Ã Ã©Ã­Ã»Ã¬ Ã®Ã¡Ã°Ã Ã§Ã®Ã¬\n" );
 
         int v = vvod ( );
         Flag = false;
@@ -149,7 +149,7 @@ void vvod_mass( int &num, int &num2, int** &mass, bool &Flag )
         {
             case 1:
 
-                printf( "Ââîäèòå ıëåìåíòû\n" );
+                printf( "Ã‚Ã¢Ã®Ã¤Ã¨Ã²Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã»\n" );
 
                 for(int i = 0; i < num; i++)
                     for( int j = 0; j < num2; j ++ )
@@ -185,7 +185,7 @@ void vyvod_mass( int num, int num2,int** mass, bool &Flag )
     {
         if ( mass != NULL )
         {
-            printf("İëåìåíòû ìàññèâà:\n");
+            printf("ÃÃ«Ã¥Ã¬Ã¥Ã­Ã²Ã» Ã¬Ã Ã±Ã±Ã¨Ã¢Ã :\n");
 
             for( int i = 0; i < num; i ++ )
             {
@@ -205,7 +205,7 @@ void vyvod_mass( int num, int num2,int** mass, bool &Flag )
         }
         else
         {
-            printf ( "Ìàññèâ íå çàïîëíåí\n" );
+            printf ( "ÃŒÃ Ã±Ã±Ã¨Ã¢ Ã­Ã¥ Ã§Ã Ã¯Ã®Ã«Ã­Ã¥Ã­\n" );
 
             Flag = true;
 
@@ -262,7 +262,7 @@ void proverka( int num, int num2, bool &Flag, int** mass )
         else
         {
 
-            printf("Ìàññèâ íå çàïîëíåí\n");
+            printf("ÃŒÃ Ã±Ã±Ã¨Ã¢ Ã­Ã¥ Ã§Ã Ã¯Ã®Ã«Ã­Ã¥Ã­\n");
 
             Flag = true;
 
@@ -278,7 +278,7 @@ void escape()
 {
     system("cls");
 
-    printf("Âû õîòèòå âûéòè ? :(\nÅñëè äà, ââåäèòå 1\nÅñëè íåò äğóãîå çíà÷åíèå\n");
+    printf("Ã‚Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¢Ã»Ã©Ã²Ã¨ ? :(\nÃ…Ã±Ã«Ã¨ Ã¤Ã , Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ 1\nÃ…Ã±Ã«Ã¨ Ã­Ã¥Ã² Ã¤Ã°Ã³Ã£Ã®Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥\n");
 
     int a = vvod();
 
@@ -304,7 +304,7 @@ int main ()
 
         system("cls");
 
-        printf( "Ìåíş\n1: ââåñòè ìàññèâ\n2: îáğàáîòàòü ìàññèâ\n3: âûâåñòè ìàññèâ\n4: âûéòè\n" );
+        printf( "ÃŒÃ¥Ã­Ã¾\n1: Ã¢Ã¢Ã¥Ã±Ã²Ã¨ Ã¬Ã Ã±Ã±Ã¨Ã¢\n2: Ã®Ã¡Ã°Ã Ã¡Ã®Ã²Ã Ã²Ã¼ Ã¬Ã Ã±Ã±Ã¨Ã¢\n3: Ã¢Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã¬Ã Ã±Ã±Ã¨Ã¢\n4: Ã¢Ã»Ã©Ã²Ã¨\n" );
 
         a = vvod ( );
 
