@@ -105,7 +105,7 @@ void vvod_mass( int &num, int &num2, int** &mass, bool &Flag )
 
         num = vvod ( );
 
-        if /*(*/ ( num > 0 ) //&& ( num < 1000 ) )
+        if ( ( num > 0 ) && ( num < 1000 ) )
         {
             break;
         }
